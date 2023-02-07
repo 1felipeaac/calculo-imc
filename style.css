@@ -265,12 +265,6 @@ body{
 }
 
 .baixo-peso{
-    color: var(--fc-baixo-peso);
-    border-radius: .4rem;
-    padding: .5rem;
-}
-
-.baixo-peso{
     background: var(--fc-baixo-peso);
     border-radius: .4rem;
     padding: .5rem;
