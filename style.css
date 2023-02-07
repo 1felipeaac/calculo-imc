@@ -214,6 +214,13 @@ body{
     transition: transform .3s;
 }
 
+.modal .title span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal button:hover{
     transform: scale(1.1);
 }
@@ -263,8 +270,14 @@ body{
     padding: .5rem;
 }
 
+.baixo-peso{
+    background: var(--fc-baixo-peso);
+    border-radius: .4rem;
+    padding: .5rem;
+}
+
 .normal{
-    color: var(--fc-normal);
+    background: var(--fc-normal);
     border-radius: .4rem;
     padding: .5rem;
 }
@@ -277,7 +290,7 @@ body{
 }
 
 .obeso{
-    color: var(--fc-obeso);
+    background: var(--fc-obeso);
     border-radius: .4rem;
     padding: .5rem;
 }
@@ -293,5 +306,6 @@ body{
 
     .card form{
         width: 100%;
+        text-align: center;
     }
 }
