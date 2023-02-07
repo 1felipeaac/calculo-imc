@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <div class="alert-error">
+        Digite somente números
+    </div>
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1>Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso(Kg)</label>
+                    <input type="text" name="weight" id="weight" placeholder="60" >
+                </div>
+                <div class="input-wrapper">
+                    <label for="height">Altura(cm)</label>
+                    <input type="text" name="height" id="height" placeholder="165">
+                </div>
+                
+                <button>Calcular IMC <img src="/assets/Vector.png" alt="vector"></button>
+                <!-- <input type="submit" value="Calcular IMC"> -->
+            </form>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">
+                <button class="close">
+                    <img src="/assets/close.svg" alt="imagem para fechar o popup">
+                </button>
+                <span></span>
+            </h2>
+            <div class="legend">
+                <ul>
+                    <li>&lt; 18.5: baixo peso</td>
+                    <li> de 18.5 a 24.9: normal</td>
+                    <li>de 25 a 29.99: sobrepeso</td>
+                    <li>&gt; 30: obeso</td>
+                </ul>
+            </div>
+            <a href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html" target="_blank">valores consultados na bvs</a>
+        </div>
+    </div>
+</body>
+</html>
